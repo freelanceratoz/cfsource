@@ -198,7 +198,7 @@
 								'##SUSPICIOUS_WORDS_URL##' => Router::url('/', true).'/admin/settings/edit/14/dbcbc7239a27f216ddb9a70a7ca51959',
 								'##APPLICATION_KEY##' => $this->Html->link($appliation_key_link . '#SolveMedia',$appliation_key_link . '#SolveMedia'),
 								'##CATPCHA_CONF##' => $this->Html->link($captcha_conf_link . '#CAPTCHA',$captcha_conf_link . '#CAPTCHA'),
-								'##DEMO_URL##' => $this->Html->link('http://dev1products.dev.agriya.com/doku.php?id=crowdfunding-install#how_to','http://dev1products.dev.agriya.com/doku.php?id=crowdfunding-install#how_to', array('target' => '_blank')),
+								'##DEMO_URL##' => $this->Html->link('https://google.com?id=crowdfunding-install#how_to','http://dev1products.dev.agriya.com/doku.php?id=crowdfunding-install#how_to', array('target' => '_blank')),
 							);
 							$setting['SettingCategory']['description'] = strtr($setting['SettingCategory']['description'], $findReplace);
 							echo $this->Html->cHtml(__l($setting['SettingCategory']['description']), false);

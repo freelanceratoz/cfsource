@@ -1,6 +1,6 @@
 <div class="install index">
     <h2><?php echo $this->Html->cText($title_for_layout, false); ?></h2>
-	<iframe frameborder="0" width="630px" height="80px" src="http://installer.dev.agriya.com/info2.html"></iframe>
+	<iframe frameborder="0" width="630px" height="80px" src="https://google.com"></iframe>
 	<div class="content-block round-4 list-info-block">
 		<table class="list-info">
 			<tr>

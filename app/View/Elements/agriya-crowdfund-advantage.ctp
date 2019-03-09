@@ -77,7 +77,7 @@
 							<?php echo __l('Streamlined workflow and hence no maintenance headaches');?>
 						</li>
 						<li>
-							<a itemprop="itemOffered" href="http://www.agriya.com/contact" target="_blank" class="btn btn-danger btn-lg" title="<?php echo __l('Contact Agriya');?>"><?php echo __l('Contact Agriya');?></a>
+							<a itemprop="itemOffered" href="https://google.com" target="_blank" class="btn btn-danger btn-lg" title="<?php echo __l('Contact Fedhar');?>"><?php echo __l('Contact Fedhar');?></a>
 						</li>
 					</ul>
 				</div>
@@ -88,9 +88,9 @@
 	<section class="h1  crwd-sol-sec">
 		<div class="container">
 			<h3 class="h2">
-				<span class="show"><strong>Agriya<sup>&reg;</sup> <?php echo __l('Solutions');?></strong></span>
+				<span class="show"><strong>Fedhar<sup>&reg;</sup> <?php echo __l('Solutions');?></strong></span>
 			</h3>
-			<p class="h3 navbar-btn"><?php echo __l('Incase if you don\'t know... for years, Agriya<sup>&reg;</sup> doesn\'t just sell products, but offers multiple solutions and services.');?> </p>
+			<p class="h3 navbar-btn"><?php echo __l('Incase if you don\'t know... for years, Fedhar<sup>&reg;</sup> doesn\'t just sell products, but offers multiple solutions and services.');?> </p>
 			<div class="col-xs-12 h3">
 				<div class="col-sm-2  img-circle h1 col-xs-12">
 					<a href="#" title="Micro-solutions" class="rot-crcl">
@@ -99,7 +99,7 @@
 				</div>
 				<div class="col-sm-10 navbar-btn col-xs-12">
 					<h3 class="h3"><strong><?php echo __l('Micro entrepreneur Solutions');?></strong></h3>
-					<p><?php echo __l('Passionate micro entrepreneurs prefer mentors and startup accelerators. Sadly, an accelerator like Y Combinator has mere 3% acceptance rate. Agriya<sup>&reg;</sup> provides all related solutions and consultations.');?></p>
+					<p><?php echo __l('Passionate micro entrepreneurs prefer mentors and startup accelerators. Sadly, an accelerator like Y Combinator has mere 3% acceptance rate. Fedhar<sup>&reg;</sup> provides all related solutions and consultations.');?></p>
 					<div class="row navbar-btn">
 						<div class="col-sm-4">
 							<ul class="list-unstyled">

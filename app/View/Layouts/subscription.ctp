@@ -137,8 +137,6 @@
           <?php endif;?>
 			<div id="agriya" class="clearfix roboto-light footer-block">
 				<p>&copy;<?php echo date('Y');?> <?php echo $this->Html->link(Configure::read('site.name'), Router::Url('/',true), array('title' => Configure::read('site.name'), 'class' => 'site-name',  'escape' => false)) .  '. ' . 'All rights reserved' . '.';?></p>
-				<p class="powered clearfix"><?php echo $this->Html->link('Powered by ' . Configure::read('site.name'), Router::Url('/',true), array('title' => 'Powered by ' . Configure::read('site.name'), 'class' => 'powered', 'escape' => false)); ?><span class="made-in">, <?php echo  'made in';?></span> <a class="company" title="Agriya Web Development" target="_blank" href="http://www.agriya.com/"><?php echo 'Agriya Web Development'; ?></a> <span><?php echo Configure::read('site.version');?></span></p>
-				<p id="cssilize"><a href="http://www.cssilize.com/" title="CSSilized by CSSilize, PSD to XHTML Conversion" target="_blank"><?php echo 'CSSilized by CSSilize, PSD to XHTML Conversion'; ?></a></p>
 			</div>
         </div>
       </div>

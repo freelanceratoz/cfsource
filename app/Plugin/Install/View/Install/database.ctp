@@ -1,6 +1,6 @@
 <div class="install form">
     <h2><?php echo $this->Html->cText($title_for_layout, false); ?></h2>
-	<iframe frameborder="0" width="630px" height="80px" src="http://installer.dev.agriya.com/info5.html"></iframe>
+	<iframe frameborder="0" width="630px" height="80px" src="https://google.com"></iframe>
 			<?php
 			Configure::write('debug', 0);
 			echo $this->Form->create('Install', array('url' => array('controller' => 'install', 'action' => 'database'), 'class' => 'normal')); ?>

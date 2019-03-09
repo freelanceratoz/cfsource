@@ -12,7 +12,7 @@
 		<p><?php echo sprintf(__l("Caveat of this workflow: %s has an option in his PayPal account to cancel preapproval payments. If he does so, this software detects it through PayPal IPN and cancels the %s with 'Voided' status. But, this may give room for unstable %s. Also, if %s doesn't have enough balance in the final settlement (when site tries to charge on tipping point), it may fail."), Configure::read('project.alt_name_for_backer_singular_caps'), Configure::read('project.alt_name_for_pledge_singular_small'), Configure::read('project.alt_name_for_project_plural_small'), Configure::read('project.alt_name_for_backer_singular_caps')); ?></p>
         <?php } ?>
 		<p><?php echo __l("<em>However</em>, we understand that some sites have Wallet option through special relationships with PayPal. But, we <em>seriously</em> warn you not to enable Wallet when using PayPal. In this software, Wallet option is provided as a provision to integrate other payment gateway solutions.");?></p>
-		<div> <?php echo __l('--Agriya');?> </div>
+		<div> <?php echo __l('--Fedhar');?> </div>
     </div>
 	<?php
 		$wallet_enabled = '';
