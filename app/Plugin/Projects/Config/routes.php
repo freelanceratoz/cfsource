@@ -27,13 +27,6 @@ CmsRouter::connect('/feeds', array(
     'plugin' => 'Projects',
     'ext' => 'rss',
 ));
-CmsRouter::connect('/', array(
-    'controller' => 'projects',
-    'action' => 'index',
-    'type' => 'home',
-    'project_type' => 'pledge',
-    'plugin' => 'Projects',
-));
 CmsRouter::connect('/:project_type/browse', array(
     'controller' => 'projects',
     'action' => 'discover',
@@ -95,4 +88,8 @@ CmsRouter::connect('/project_funds/type/:type', array(
     'action' => 'index',
 ) , array(
     'type' => '[a-zA-Z0-9\-]+'
+));
+CmsRouter::connect('/', array('controller' => 'projects',
+	'action' => 'home_page',
+	'plugin' => 'Projects'
 ));

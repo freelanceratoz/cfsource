@@ -2958,5 +2958,8 @@ class ProjectsController extends AppController
 				$this->set('projects', $projects);
 			}
 		}
+		public function home_page() {
+            $this->layout    = 'newdefault'; 
+		}		
     }
 ?>

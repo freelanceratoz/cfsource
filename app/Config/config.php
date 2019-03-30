@@ -198,6 +198,7 @@ if (class_exists('CmsHook') && method_exists('CmsHook', 'setExceptionUrl')) {
 	'projects/project_pay_now',
 	'projects/feature_list',
 	'projects/feature_slide',
+	'projects/home_page'
     ));
 }
 $config['site']['is_admin_settings_enabled'] = true;
