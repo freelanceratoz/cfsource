@@ -1,10 +1,10 @@
-<div id="P_masterslider" class="master-slider-parent ms-parent-id-40" style="max-width:1200px;" >
+<div id="P_masterslider" class="master-slider-parent ms-parent-id-40" style="width:100%; max-width:1900px;" >
 	<!-- MasterSlider Main -->
 	<div id="masterslider" class="master-slider ms-skin-default" >
 		<div class="ms-slide" data-delay="10" data-fill-mode="fill" >
 			<img class="ms-layer"
-				 src="images/slider-images/blank.gif"
-				 data-src="images/slider-images/slide1-bg.jpg"
+				 src="<?php echo $this->webroot; ?>img/asset/images/slider-images/blank.gif"
+				 data-src="<?php echo $this->webroot; ?>img/asset/images/slider-images/slide1-bg.jpg"
 				 alt=""
 				 style=""
 				 data-effect="t(false,n,-1600,n,n,n,n,n,n,n,n,n,n,n,n)"
@@ -17,8 +17,8 @@
 				 data-origin="tl"
 				 data-position="normal" />
 			<img class="ms-layer"
-				 src="images/slider-images/blank.gif"
-				 data-src="images/slider-images/slide1-cloud.png"
+				 src="<?php echo $this->webroot; ?>img/asset/images/slider-images/blank.gif"
+				 data-src="<?php echo $this->webroot; ?>img/asset/images/slider-images/slide1-cloud.png"
 				 alt=""
 				 style=""
 				 data-effect="t(true,n,-280,n,n,n,n,n,n,n,n,n,n,n,n)"
@@ -66,8 +66,8 @@
 		</div>
 		<div class="ms-slide" data-delay="5" data-fill-mode="fill" >
 			<img class="ms-layer"
-				 src="images/slider-images/blank.gif"
-				 data-src="images/slider-images/slide2-bg.jpg"
+				 src="<?php echo $this->webroot; ?>img/asset/images/slider-images/blank.gif"
+				 data-src="<?php echo $this->webroot; ?>img/asset/images/slider-images/slide2-bg.jpg"
 				 alt=""
 				 style=""
 				 data-effect="t(false,n,250,n,n,n,n,n,n,n,n,n,n,n,n)"
@@ -117,8 +117,8 @@
 		</div>
 		<div class="ms-slide" data-delay="5" data-fill-mode="fill" >
 			<img class="ms-layer"
-				 src="images/slider-images/blank.gif"
-				 data-src="images/slider-images/slide3-bg.jpg"
+				 src="<?php echo $this->webroot; ?>img/asset/images/slider-images/blank.gif"
+				 data-src="<?php echo $this->webroot; ?>img/asset/images/slider-images/slide3-bg.jpg"
 				 alt=""
 				 style=""
 				 data-effect="t(false,n,-160,n,n,n,n,n,n,n,n,n,n,n,n)"
@@ -205,9 +205,9 @@
 	</div>
 	<div id="js-grid-lightbox-gallery" class="cbp">
 		<div class="cbp-item web-design graphic print motion">
-			<a href="images/w1.jpg" class="cbp-caption cbp-lightbox" data-title="World Clock<br>by Paul Flavius Nechita" rel="nofollow">
+			<a href="img/asset/images/w1.jpg" class="cbp-caption cbp-lightbox" data-title="World Clock<br>by Paul Flavius Nechita" rel="nofollow">
 				<div class="cbp-caption-defaultWrap">
-					<img src="images/w1.jpg" alt="">
+					<img src="img/asset/images/w1.jpg" alt="">
 				</div>
 				<div class="cbp-caption-activeWrap">
 					<div class="cbp-l-caption-alignLeft">
@@ -220,9 +220,9 @@
 			</a>
 		</div>
 		<div class="cbp-item web-design logos identity graphic">
-			<a href="images/w2.jpg" class="cbp-caption cbp-lightbox" data-title="Bolt UI<br>by Tiberiu Neamu" rel="nofollow">
+			<a href="img/asset/images/w2.jpg" class="cbp-caption cbp-lightbox" data-title="Bolt UI<br>by Tiberiu Neamu" rel="nofollow">
 				<div class="cbp-caption-defaultWrap">
-					<img src="images/w2.jpg" alt="">
+					<img src="img/asset/images/w2.jpg" alt="">
 				</div>
 				<div class="cbp-caption-activeWrap">
 					<div class="cbp-l-caption-alignLeft">
@@ -235,9 +235,9 @@
 			</a>
 		</div>
 		<div class="cbp-item graphic print identity">
-			<a href="images/w3.jpg" class="cbp-caption cbp-lightbox" data-title="WhereTO App<br>by Tiberiu Neamu" rel="nofollow">
+			<a href="img/asset/images/w3.jpg" class="cbp-caption cbp-lightbox" data-title="WhereTO App<br>by Tiberiu Neamu" rel="nofollow">
 				<div class="cbp-caption-defaultWrap">
-					<img src="images/w3.jpg" alt="">
+					<img src="img/asset/images/w3.jpg" alt="">
 				</div>
 				<div class="cbp-caption-activeWrap">
 					<div class="cbp-l-caption-alignLeft">
@@ -250,9 +250,9 @@
 			</a>
 		</div>
 		<div class="cbp-item web-design motion logos">
-			<a href="images/w4.jpg" class="cbp-caption cbp-lightbox" data-title="iDevices<br>by Tiberiu Neamu" rel="nofollow">
+			<a href="img/asset/images/w4.jpg" class="cbp-caption cbp-lightbox" data-title="iDevices<br>by Tiberiu Neamu" rel="nofollow">
 				<div class="cbp-caption-defaultWrap">
-					<img src="images/w4.jpg" alt="">
+					<img src="img/asset/images/w4.jpg" alt="">
 				</div>
 				<div class="cbp-caption-activeWrap">
 					<div class="cbp-l-caption-alignLeft">
@@ -265,9 +265,9 @@
 			</a>
 		</div>
 		<div class="cbp-item identity graphic print">
-			<a href="images/w5.jpg" class="cbp-caption cbp-lightbox" data-title="Seemple* Music<br>by Tiberiu Neamu" rel="nofollow">
+			<a href="img/asset/images/w5.jpg" class="cbp-caption cbp-lightbox" data-title="Seemple* Music<br>by Tiberiu Neamu" rel="nofollow">
 				<div class="cbp-caption-defaultWrap">
-					<img src="images/w5.jpg" alt="">
+					<img src="img/asset/images/w5.jpg" alt="">
 				</div>
 				<div class="cbp-caption-activeWrap">
 					<div class="cbp-l-caption-alignLeft">
@@ -280,9 +280,9 @@
 			</a>
 		</div>
 		<div class="cbp-item motion print logos web-design">
-			<a href="images/w6.jpg" class="cbp-caption cbp-lightbox" data-title="Remind~Me Widget<br>by Tiberiu Neamu" rel="nofollow">
+			<a href="img/asset/images/w6.jpg" class="cbp-caption cbp-lightbox" data-title="Remind~Me Widget<br>by Tiberiu Neamu" rel="nofollow">
 				<div class="cbp-caption-defaultWrap">
-					<img src="images/w6.jpg" alt="">
+					<img src="img/asset/images/w6.jpg" alt="">
 				</div>
 				<div class="cbp-caption-activeWrap">
 					<div class="cbp-l-caption-alignLeft">
@@ -295,9 +295,9 @@
 			</a>
 		</div>
 		<div class="cbp-item graphic logos">
-			<a href="images/w7.jpg" class="cbp-caption cbp-lightbox" data-title="Workout Buddy<br>by Tiberiu Neamu" rel="nofollow">
+			<a href="img/asset/images/w7.jpg" class="cbp-caption cbp-lightbox" data-title="Workout Buddy<br>by Tiberiu Neamu" rel="nofollow">
 				<div class="cbp-caption-defaultWrap">
-					<img src="images/w7.jpg" alt="">
+					<img src="img/asset/images/w7.jpg" alt="">
 				</div>
 				<div class="cbp-caption-activeWrap">
 					<div class="cbp-l-caption-alignLeft">
@@ -310,9 +310,9 @@
 			</a>
 		</div>
 		<div class="cbp-item identity print logos motion">
-			<a href="images/w8.jpg" class="cbp-caption cbp-lightbox" data-title="Digital Menu<br>by Cosmin Capitanu" rel="nofollow">
+			<a href="img/asset/images/w8.jpg" class="cbp-caption cbp-lightbox" data-title="Digital Menu<br>by Cosmin Capitanu" rel="nofollow">
 				<div class="cbp-caption-defaultWrap">
-					<img src="images/w8.jpg" alt="">
+					<img src="img/asset/images/w8.jpg" alt="">
 				</div>
 				<div class="cbp-caption-activeWrap">
 					<div class="cbp-l-caption-alignLeft">
@@ -334,7 +334,7 @@
 				<p>
 					" This is a great theme! I love it and recommend it to anyone wanting to purchase it. "
 				</p>
-				<img src="images/team3.jpg" alt="" class="img-fluid  rounded-circle">
+				<img src="img/asset/images/team3.jpg" alt="" class="img-fluid  rounded-circle">
 				<h5>John Doe <span>Assan Customer</span></h5>
 			</div>
 		</div>
@@ -343,7 +343,7 @@
 				<p>
 					" This is a great theme! I love it and recommend it to anyone wanting to purchase it. "
 				</p>
-				<img src="images/team2.jpg" alt="" class="img-fluid rounded-circle">
+				<img src="img/asset/images/team2.jpg" alt="" class="img-fluid rounded-circle">
 				<h5>John Doe <span>Assan Customer</span></h5>
 			</div>
 		</div>
@@ -352,13 +352,13 @@
 				<p>
 					" This is a great theme! I love it and recommend it to anyone wanting to purchase it. "
 				</p>
-				<img src="images/team1.jpg" alt="" class="img-fluid  rounded-circle">
+				<img src="img/asset/images/team1.jpg" alt="" class="img-fluid  rounded-circle">
 				<h5>John Doe <span>Assan Customer</span></h5>
 			</div>
 		</div>
 	</div>
 </div><!--container-->
-<div class="bg-parallax parallax-overlay" data-jarallax='{"speed": 0.2}' style='background-image: url("images/bg1.jpg")'>
+<div class="bg-parallax parallax-overlay" data-jarallax='{"speed": 0.2}' style='background-image: url("img/asset/images/bg1.jpg")'>
 	<div class="container pt100 pb50">
 		<div class="row">
 			<div class="col-lg-3 col-md-6 pb50 text-center">
@@ -404,14 +404,14 @@
 	<div class="container pt100 pb70">
 		<h2 class="section-title mb70">Our Clients</h2>
 		<ul class="clients-grid mb0 column4 clearfix">
-			<li><img src="images/cl-1.png" class="img-fluid" alt="Clients"></li>
-			<li><img src="images/cl-2.png" class="img-fluid" alt="Clients"></li>
-			<li><img src="images/cl-3.png" class="img-fluid" alt="Clients"></li>
-			<li><img src="images/cl-4.png" class="img-fluid" alt="Clients"></li>
-			<li><img src="images/cl-5.png" class="img-fluid" alt="Clients"></li>
-			<li><img src="images/cl-1.png" class="img-fluid" alt="Clients"></li>
-			<li><img src="images/cl-3.png" class="img-fluid" alt="Clients"></li>
-			<li><img src="images/cl-5.png" class="img-fluid" alt="Clients"></li>
+			<li><img src="img/asset/images/cl-1.png" class="img-fluid" alt="Clients"></li>
+			<li><img src="img/asset/images/cl-2.png" class="img-fluid" alt="Clients"></li>
+			<li><img src="img/asset/images/cl-3.png" class="img-fluid" alt="Clients"></li>
+			<li><img src="img/asset/images/cl-4.png" class="img-fluid" alt="Clients"></li>
+			<li><img src="img/asset/images/cl-5.png" class="img-fluid" alt="Clients"></li>
+			<li><img src="img/asset/images/cl-1.png" class="img-fluid" alt="Clients"></li>
+			<li><img src="img/asset/images/cl-3.png" class="img-fluid" alt="Clients"></li>
+			<li><img src="img/asset/images/cl-5.png" class="img-fluid" alt="Clients"></li>
 		</ul>
 	</div>
 </div>

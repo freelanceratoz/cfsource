@@ -68,9 +68,9 @@
 			<meta property="og:image" content="<?php echo $this->Html->cText($meta_for_layout['project_image'], false);?>"/>
 		<?php } else { ?>
 		<?php if (!empty($this->theme)) { ?>
-			<meta property="og:image" content="<?php echo Router::url('/', true) . 'theme/' . $this->theme . '/img/crowdfunding.png';?>"/>
+			<meta property="og:image" content="<?php echo Router::url('/', true) . 'theme/' . $this->theme . '/img/Fedhar.png';?>"/>
 		<?php } else { ?>
-			<meta property="og:image" content="<?php echo Router::url('/', true) . 'img/crowdfunding.png';?>"/>
+			<meta property="og:image" content="<?php echo Router::url('/', true) . 'img/Fedhar.png';?>"/>
 		<?php } ?>
 		<?php } ?>
 		<?php if(!empty($meta_for_layout['project_url'])) { ?>
@@ -238,7 +238,7 @@
 									}
 									?>
 									<h1 class="list-group-item-heading list-group-item-text" itemscope itemtype="http://schema.org/Organization">
-									<?php echo $this->Html->link($this->Html->image('crowdfunding.png', array('itemprop' => 'logo', 'class' => ' img-responsive')),  '/', array('title' => Configure::read('site.name'),'escape' => false, 'itemprop' => 'url'));?>
+									<?php echo $this->Html->link($this->Html->image('Fedhar.png', array('itemprop' => 'logo', 'class' => ' img-responsive')),  '/', array('title' => Configure::read('site.name'),'escape' => false, 'itemprop' => 'url'));?>
 									</h1>
 								</div>
 							</div>
