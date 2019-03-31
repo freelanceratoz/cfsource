@@ -20,7 +20,7 @@
 		$class .= ' title-double-line';
 	}
 ?>
-	<section class="list-group-item-text list-group-item-heading bg-clor-gray" itemtype="http://schema.org/Person" itemscope>
+	<section class="list-group-item-text list-group-item-heading" itemtype="http://schema.org/Person" itemscope>
 		<div class="container">
 			<?php //echo $this->Html->getUserAvatar($project['User'], 'normal_thumb', true,'','no-span'); ?>
 			<h3 class="h2 text-center roboto-bold marg-top-50" itemprop="headline">
@@ -65,13 +65,13 @@
 						if (empty($projectStatus->data['is_allow_to_vote'])):
 						?>
 						<?php if ($project['Project']['project_type_id'] == ConstProjectTypes::Donate) { ?>
-						<li class="tab"><?php echo $this->Html->link($this->Html->image('donate-icon.png', array('width' => 15, 'height' => 15)).' '.Configure::read('project.alt_name_for_donor_plural_caps'), array('controller' => 'projects', 'action' => 'view', $project['Project']['slug'].'#backers'), array('class' => 'js-no-pjax panel-link js-tab-show-onclick', 'title' => Configure::read('project.alt_name_for_donor_plural_caps'), 'rel' => '#backers', 'escape' => false)); ?></li>
+						<li class="tab"><?php echo $this->Html->link($this->Html->image('donate_new_sm.png', array('width' => 15, 'height' => 15)).' '.Configure::read('project.alt_name_for_donor_plural_caps'), array('controller' => 'projects', 'action' => 'view', $project['Project']['slug'].'#backers'), array('class' => 'js-no-pjax panel-link js-tab-show-onclick', 'title' => Configure::read('project.alt_name_for_donor_plural_caps'), 'rel' => '#backers', 'escape' => false)); ?></li>
 						<?php } else if ($project['Project']['project_type_id'] == ConstProjectTypes::Lend) { ?>
-						<li class="tab"><?php echo $this->Html->link($this->Html->image('lend-hand.png', array('width' => 15, 'height' => 15)).' '.Configure::read('project.alt_name_for_lender_plural_caps'), array('controller' => 'projects', 'action' => 'view', $project['Project']['slug'].'#backers'), array('class' => 'js-no-pjax panel-link js-tab-show-onclick', 'title' => Configure::read('project.alt_name_for_lender_plural_caps'), 'rel' => '#backers', 'escape' => false)); ?></li>
+						<li class="tab"><?php echo $this->Html->link($this->Html->image('lend_new_sm.png', array('width' => 15, 'height' => 15)).' '.Configure::read('project.alt_name_for_lender_plural_caps'), array('controller' => 'projects', 'action' => 'view', $project['Project']['slug'].'#backers'), array('class' => 'js-no-pjax panel-link js-tab-show-onclick', 'title' => Configure::read('project.alt_name_for_lender_plural_caps'), 'rel' => '#backers', 'escape' => false)); ?></li>
 						<?php }else if ($project['Project']['project_type_id'] == ConstProjectTypes::Equity) { ?>
-						<li class="tab"><?php echo $this->Html->link($this->Html->image('equity-hand.png', array('width' => 15, 'height' => 15)).' '. Configure::read('project.alt_name_for_investor_plural_caps'), array('controller' => 'projects', 'action' => 'view', $project['Project']['slug'].'#backers'), array('class' => 'js-no-pjax panel-link js-tab-show-onclick', 'title' => Configure::read('project.alt_name_for_investor_plural_caps'), 'rel' => '#backers', 'escape' => false)); ?></li>
+						<li class="tab"><?php echo $this->Html->link($this->Html->image('equity_new_sm.png', array('width' => 15, 'height' => 15)).' '. Configure::read('project.alt_name_for_investor_plural_caps'), array('controller' => 'projects', 'action' => 'view', $project['Project']['slug'].'#backers'), array('class' => 'js-no-pjax panel-link js-tab-show-onclick', 'title' => Configure::read('project.alt_name_for_investor_plural_caps'), 'rel' => '#backers', 'escape' => false)); ?></li>
 						<?php } else { ?>
-						<li class="tab"><?php echo $this->Html->link('<span class="right-mspace-xs">'.$this->Html->image('pledge-projects.png', array('width' => 13, 'height' => 13)).'</span>'.' '.Configure::read('project.alt_name_for_backer_plural_caps'), array('controller' => 'projects', 'action' => 'view', $project['Project']['slug'].'#backers'), array('class' => 'panel-link js-no-pjax js-tab-show-onclick', 'title' =>  Configure::read('project.alt_name_for_backer_plural_caps'),'rel' => '#backers',  'escape' => false)); ?></li>
+						<li class="tab"><?php echo $this->Html->link('<span class="right-mspace-xs">'.$this->Html->image('pledge_new_sm.png', array('width' => 13, 'height' => 13)).'</span>'.' '.Configure::read('project.alt_name_for_backer_plural_caps'), array('controller' => 'projects', 'action' => 'view', $project['Project']['slug'].'#backers'), array('class' => 'panel-link js-no-pjax js-tab-show-onclick', 'title' =>  Configure::read('project.alt_name_for_backer_plural_caps'),'rel' => '#backers',  'escape' => false)); ?></li>
 						<?php } ?>
 						<?php
 						endif;
@@ -133,13 +133,13 @@
 							if (empty($projectStatus->data['is_allow_to_vote'])):
 							?>
 							<?php if ($project['Project']['project_type_id'] == ConstProjectTypes::Donate) { ?>
-							<li class="tab"><?php echo $this->Html->link($this->Html->image('donate-icon.png', array('width' => 15, 'height' => 15)).' '.Configure::read('project.alt_name_for_donor_plural_caps'), array('controller' => 'projects', 'action' => 'view', $project['Project']['slug'].'#backers'), array('class' => 'js-no-pjax panel-link js-tab-show-onclick', 'title' => Configure::read('project.alt_name_for_donor_plural_caps'), 'rel' => '#backers', 'escape' => false)); ?></li>
+							<li class="tab"><?php echo $this->Html->link($this->Html->image('donate-_new_sm.png', array('width' => 15, 'height' => 15)).' '.Configure::read('project.alt_name_for_donor_plural_caps'), array('controller' => 'projects', 'action' => 'view', $project['Project']['slug'].'#backers'), array('class' => 'js-no-pjax panel-link js-tab-show-onclick', 'title' => Configure::read('project.alt_name_for_donor_plural_caps'), 'rel' => '#backers', 'escape' => false)); ?></li>
 							<?php } else if ($project['Project']['project_type_id'] == ConstProjectTypes::Lend) { ?>
-							<li class="tab"><?php echo $this->Html->link($this->Html->image('lend-hand.png', array('width' => 15, 'height' => 15)).' '.Configure::read('project.alt_name_for_lender_plural_caps'), array('controller' => 'projects', 'action' => 'view', $project['Project']['slug'].'#backers'), array('class' => 'js-no-pjax panel-link js-tab-show-onclick', 'title' => Configure::read('project.alt_name_for_lender_plural_caps'), 'rel' => '#backers', 'escape' => false)); ?></li>
+							<li class="tab"><?php echo $this->Html->link($this->Html->image('lend-_new_sm.png', array('width' => 15, 'height' => 15)).' '.Configure::read('project.alt_name_for_lender_plural_caps'), array('controller' => 'projects', 'action' => 'view', $project['Project']['slug'].'#backers'), array('class' => 'js-no-pjax panel-link js-tab-show-onclick', 'title' => Configure::read('project.alt_name_for_lender_plural_caps'), 'rel' => '#backers', 'escape' => false)); ?></li>
 							<?php }else if ($project['Project']['project_type_id'] == ConstProjectTypes::Equity) { ?>
-							<li class="tab"><?php echo $this->Html->link($this->Html->image('equity-hand.png', array('width' => 15, 'height' => 15)).' '. Configure::read('project.alt_name_for_investor_plural_caps'), array('controller' => 'projects', 'action' => 'view', $project['Project']['slug'].'#backers'), array('class' => 'js-no-pjax panel-link js-tab-show-onclick', 'title' => Configure::read('project.alt_name_for_investor_plural_caps'), 'rel' => '#backers', 'escape' => false)); ?></li>
+							<li class="tab"><?php echo $this->Html->link($this->Html->image('equity-_new_sm.png', array('width' => 15, 'height' => 15)).' '. Configure::read('project.alt_name_for_investor_plural_caps'), array('controller' => 'projects', 'action' => 'view', $project['Project']['slug'].'#backers'), array('class' => 'js-no-pjax panel-link js-tab-show-onclick', 'title' => Configure::read('project.alt_name_for_investor_plural_caps'), 'rel' => '#backers', 'escape' => false)); ?></li>
 							<?php } else { ?>
-							<li class="tab"><?php echo $this->Html->link('<span class="right-mspace-xs">'.$this->Html->image('pledge-projects.png', array('width' => 13, 'height' => 13)).'</span>'.' '.Configure::read('project.alt_name_for_backer_plural_caps'), array('controller' => 'projects', 'action' => 'view', $project['Project']['slug'].'#backers'), array('class' => 'panel-link js-no-pjax js-tab-show-onclick', 'title' =>  Configure::read('project.alt_name_for_backer_plural_caps'),'rel' => '#backers',  'escape' => false)); ?></li>
+							<li class="tab"><?php echo $this->Html->link('<span class="right-mspace-xs">'.$this->Html->image('pledge_new_sm.png', array('width' => 13, 'height' => 13)).'</span>'.' '.Configure::read('project.alt_name_for_backer_plural_caps'), array('controller' => 'projects', 'action' => 'view', $project['Project']['slug'].'#backers'), array('class' => 'panel-link js-no-pjax js-tab-show-onclick', 'title' =>  Configure::read('project.alt_name_for_backer_plural_caps'),'rel' => '#backers',  'escape' => false)); ?></li>
 							<?php } ?>
 							<?php
 							endif;
@@ -335,7 +335,7 @@
 									</div>
 								</div>
 							</div>
-						<hr class="hr-2px-drk-gray marg-top-20 marg-btom-5">
+						
 					</li>
 					<li class="navbar-btn marg-top-30">
 						<?php
@@ -439,7 +439,7 @@
 			</div>
 		</div>
 	</div>
-	<hr class="hr-2px-drk-gray no-mar">
+
 </section>	
 <section>
 	<div class="container">
@@ -489,7 +489,7 @@
 			</div>
 		</div>   	
 	</div>
-	<hr class="hr-2px-gray no-mar">
+	
 </section>
 <section class="navbar-btn">
 	<div class="container navbar-btn">

@@ -36,7 +36,7 @@
 				</div>
 			</div>
 		</div>
-		<ul class="col-sm-12 clearfix list-inline text-center users-dashboard-ul gray-bg">				
+		<ul class="col-sm-12 clearfix list-inline text-center users-dashboard-ul">				
 				<li>
 					<div><strong class="text-success"><?php echo $this->Html->cInt($project_count, false); ?></strong></div>
 					<div><?php echo sprintf(__l('%s Posted'), Configure::read('project.alt_name_for_project_plural_caps')); ?></div>

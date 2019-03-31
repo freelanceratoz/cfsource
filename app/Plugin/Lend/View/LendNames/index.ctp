@@ -4,7 +4,7 @@
 <div class="js-response">
   <?php } ?>
   <div class="clearfix" itemtype="http://schema.org/Product" itemscope>
-  <div class="pull-left circ space3 row offset1 lend-status img-circle text-center" itemprop="Name"> <span class="show text-center"><?php echo $this->Html->image('lend-hand.png', array('width' => 50, 'height' => 50)); ?></span><?php echo Configure::read('project.alt_name_for_lend_singular_caps'); ?> </div>
+  <div class="pull-left circ space3 row offset1 lend-status img-circle text-center" itemprop="Name"> <span class="show text-center"><?php echo $this->Html->image('lend_new_sm.png', array('width' => 50, 'height' => 50)); ?></span><?php echo Configure::read('project.alt_name_for_lend_singular_caps'); ?> </div>
   <h4 class="lendc"><?php echo sprintf(__l('My %s'), Configure::read('project.alt_name_for_lend_plural_caps')); ?></h4>
   </div>
   <?php echo $this->element('Lend.lend_summary');?>

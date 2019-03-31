@@ -36,7 +36,7 @@
 		<link href="<?php echo Router::url(array('controller' => 'feeds', 'action' => 'index', 'ext' => 'rss', 'admin' => false), true);?>" type="application/rss+xml" rel="alternate" title="RSS Feeds"/>
 		<!-- Latest compiled and minified CSS 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">--> 
-		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i,800" rel="stylesheet">
 		<?php echo $this->fetch('seo_paging'); ?>
 		<?php echo $this->Html->css('default.cache.'.Configure::read('site.version'), null, array('inline' => true)); ?>
 		<?php
@@ -224,7 +224,7 @@
 				<nav class="navbar navbar-default list-group-item-text navbar-white">
 					<div class="container">
 						<div class="row">
-							<div class="col-sm-2 col-md-2 col-lg-2 col-xs-8 h5 list-group-item-text col-lg-02">
+							<div class="col-sm-2 col-md-2 col-lg-2 col-xs-8 h5 list-group-item-text col-lg-02" style="padding-bottom:10px;">
 								<div class="navbar-header">
 									<button type="button" class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse"> 
 										<span class="sr-only">Toggle navigation</span> 
@@ -242,7 +242,7 @@
 									</h1>
 								</div>
 							</div>
-							<div class="col-xs-4 col-sm-10 col-md-10 col-lg-10 col-lg-010 nav">
+							<div class="col-xs-4 col-sm-10 col-md-10 col-lg-10 col-lg-010 nav top-navi-bar">
 								<!--<a data-target=".navbar-collapse" data-toggle="collapse" class="btn navbar-btn"> <i class="fa fa-th-list fa-fw icon-24"></i></a>-->
 								<?php echo $this->element('header-menu'); ?>
 							</div>
@@ -266,101 +266,23 @@
 				</main>
 			</section>
 			<footer id="footer" class="footer">
-				<div class="navbar navbar-inverse list-group-item-text navbar-black">
+				<div class="navbar navbar-inverse list-group-item-text">
 					<div class="container navbar-btn">
 						<div class="row">
-							<div class="col-sm-7 h3 col-lg-6">
-								<div class="col-sm-3 col-md-4 col-lg-4 col-lg-04  prnt">
-									<div class="row">
-										<h3 class="h4 text-capitalize resp-foo-head click-clps">
-                                            	<strong class="fa-inverse"><?php echo __l('exploring'); ?></strong>
-												<i class="fa fa-plus pull-right hidden"></i>
-                                        </h3>
-										<ul class="list-unstyled text-capitalize h3">
-											<?php if (isPluginEnabled('Projects')): ?>
-											<?php
-											$url = $this->Html->onProjectAddFormLoad();
-											?>
-											<?php if (!empty($url)): ?>
-											<li class="h5 clearfix">
-												<?php echo $this->Html->link('<span class="show">' . __l('Start Your Projects') . '</span>', $url, array('title' => __l('Start Your Projects'),'class' => 'pull-left fa-inverse text-capitalize','escape' => false));?>
-											</li>
-											<?php endif; ?>
-											<?php endif; ?>
-											<?php 
-											if(isPluginEnabled('Pledge')) {
-											?>
-												<li class="h5 clearfix">
-													<?php echo $this->Html->link('<span class="show">' . __l(Configure::read('project.alt_name_for_pledge_singular_caps')) . '</span>', array('controller' => 'projects', 'action' => 'discover', 'project_type'=> 'pledge' , 'admin' => false), array('title' => __l('Pledge'),'class' => 'pull-left fa-inverse text-capitalize', 'escape' => false)); ?>
-												</li>
-											<?php
-											}
-											?>
-											<?php 
-											if(isPluginEnabled('Donate')) {
-											?>
-												<li class="h5 clearfix">
-													<?php echo $this->Html->link('<span class="show">' . __l(Configure::read('project.alt_name_for_donate_singular_caps')) . '</span>', array('controller' => 'projects', 'action' => 'discover', 'project_type'=> 'donate' , 'admin' => false), array('title' => __l('Donate'),'class' => 'pull-left fa-inverse text-capitalize', 'escape' => false)); ?>
-												</li>
-											<?php
-											}
-											?>
-											<?php 
-											if(isPluginEnabled('Equity')) {
-											?>
-												<li class="h5 clearfix">
-													<?php echo $this->Html->link('<span class="show">' . __l(Configure::read('project.alt_name_for_equity_singular_caps')) . '</span>', array('controller' => 'projects', 'action' => 'discover', 'project_type'=> 'equity' , 'admin' => false), array('title' => __l('Equity'),'class' => 'pull-left fa-inverse text-capitalize', 'escape' => false)); ?>
-												</li>
-											<?php
-											}
-											?>
-											<?php 
-											if(isPluginEnabled('Lend')) {
-											?>
-												<li class="h5 clearfix">
-													<?php echo $this->Html->link('<span class="show">' . __l(Configure::read('project.alt_name_for_lend_singular_caps')) . '</span>', array('controller' => 'projects', 'action' => 'discover', 'project_type'=> 'lend' , 'admin' => false), array('title' => __l('Lend'),'class' => 'pull-left fa-inverse text-capitalize', 'escape' => false)); ?>
-												</li>
-											<?php
-											}
-											?>
-										</ul>
-										
-										
-									</div>
-								</div>
-								<div class="col-sm-6 col-md-5 col-lg-5 col-lg-04  prnt">
-									<div class="row">
-										<h3 class="h4 text-capitalize click-clps resp-foo-head">
-                                        	<strong class="fa-inverse "><?php echo sprintf(__l('about %s'), Configure::read('site.name'));?></strong>
-											<i class="fa fa-plus pull-right hidden"></i>
-                                        </h3>
-										<?php echo $this->Layout->menu('footer2'); ?>
-									</div>
-								</div>
-								<div class="col-sm-3 col-md-3 col-lg-3 col-lg-04  prnt">
-									<div class="row">
-										<h3 class="h4 text-capitalize click-clps resp-foo-head">
-											<strong class="fa-inverse"><?php echo __l('help'); ?></strong> 
-											<i class="fa fa-plus pull-right hidden"></i>
-                                        </h3>
-										<?php echo $this->Layout->menu('footer3'); ?>
-									</div>
-								</div>
-							</div>
-							<div class="text-center col-lg-6 col-sm-5 navbar-btn col-md-06">
+							
+							<div class="col-lg-6 col-sm-5 navbar-btn col-md-06">
 								<div class="navbar-btn row">
 									<div class="navbar-btn clearfix">
+									<h5>Call us today - +01 574-5832-583</h5>
 										<ul class="list-inline navbar-btn">
 											<?php
 											if (Configure::read('facebook.site_facebook_url')):
 											$facebook_url = Configure::read('facebook.site_facebook_url');
 											?>
 											<li>
-												<a href="<?php echo $facebook_url; ?>" title="Facebook" class="text-primary small js-no-pjax show" target="_blank">
-													<span class="fa-stack fa-2x">
-													<i class="fa fa-circle  fa-stack-2x"></i>
-													<small><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></small>
-													</span>
+												<a href="<?php echo $facebook_url; ?>" title="Facebook" class="social-icon si-dark si-facebook si-dark-round" target="_blank">
+												<i class="fa fa-facebook"></i>
+                                            <i class="fa fa-facebook"></i>
 												</a>
 											</li>
 											<?php
@@ -369,10 +291,9 @@
 											$twitter_url = 'http://www.twitter.com/'.Configure::read('twitter.username');
 											?>
 											<li>
-												<a href="<?php echo $twitter_url; ?>" title="Twitter" class="text-info small js-no-pjax show" target="_blank">
-													<span class="fa-stack fa-2x">
-													<i class="fa fa-circle  fa-stack-2x"></i>
-													<small><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></small>
+												<a href="<?php echo $twitter_url; ?>" title="Twitter"  class="social-icon si-dark si-twitter si-dark-round" target="_blank">
+												<i class="fa fa-twitter"></i>
+                                            <i class="fa fa-twitter"></i>
 													</span>
 												</a>
 											</li>
@@ -381,17 +302,90 @@
 											?>
 											<li>
 											<?php $rss_url = Router::url(array('controller' => 'feeds', 'action' => 'index', 'ext' => 'rss', 'admin' => false) , true); ?>
-												<a href="<?php echo $rss_url; ?>" title="<?php echo __l('RSS feed'); ?>" class="text-danger small">
-												<span class="fa-stack fa-2x">
-												<i class="fa fa-circle  fa-stack-2x"></i>
-												<small><i class="fa fa-rss-square fa-stack-1x fa-inverse"></i></small>
-												</span>
+												<a href="<?php echo $rss_url; ?>" title="<?php echo __l('RSS feed'); ?>"class="social-icon si-dark si-feed si-dark-round">
+												<i class="fa fa-rss"></i>
+												<i class="fa fa-rss"></i>
 												</a>
 											</li>											
 										</ul>
-										<div class="navbar-btn col-xs-12">
-											<p class="text-muted h6">&copy;<?php echo date('Y');?><strong><?php echo $this->Html->link($this->Html->cText(Configure::read('site.name'), false), '/', array('title' => Configure::read('site.name'), 'class' => 'text-muted h6', 'escape' => false)) .  '. ' . __l('All rights reserved') . '.';?></strong></p>
+										
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-7 h3 col-lg-6">
+								<div class="webfooter-menu  prnt">
+									<div class="row">
+									
+										<ul class="list-unstyled text-capitalize h3 pull-right mob-clr">
+											<?php if (isPluginEnabled('Projects')): ?>
+											<?php
+											$url = $this->Html->onProjectAddFormLoad();
+											?>
+											<?php if (!empty($url)): ?>
+											<li>
+												<?php echo $this->Html->link('<span class="show">' . __l('Start Your Projects') . '</span>', $url, array('title' => __l('Start Your Projects'),'class' => 'pull-left fa-inverse text-capitalize','escape' => false));?>
+											</li>
+											<?php endif; ?>
+											<?php endif; ?>
+											<?php 
+											if(isPluginEnabled('Pledge')) {
+											?>
+												<li>
+													<?php echo $this->Html->link('<span class="show">' . __l(Configure::read('project.alt_name_for_pledge_singular_caps')) . '</span>', array('controller' => 'projects', 'action' => 'discover', 'project_type'=> 'pledge' , 'admin' => false), array('title' => __l('Pledge'),'class' => 'pull-left fa-inverse text-capitalize', 'escape' => false)); ?>
+												</li>
+											<?php
+											}
+											?>
+											<?php 
+											if(isPluginEnabled('Donate')) {
+											?>
+												<li>
+													<?php echo $this->Html->link('<span class="show">' . __l(Configure::read('project.alt_name_for_donate_singular_caps')) . '</span>', array('controller' => 'projects', 'action' => 'discover', 'project_type'=> 'donate' , 'admin' => false), array('title' => __l('Donate'),'class' => 'pull-left fa-inverse text-capitalize', 'escape' => false)); ?>
+												</li>
+											<?php
+											}
+											?>
+											<?php 
+											if(isPluginEnabled('Equity')) {
+											?>
+												<li>
+													<?php echo $this->Html->link('<span class="show">' . __l(Configure::read('project.alt_name_for_equity_singular_caps')) . '</span>', array('controller' => 'projects', 'action' => 'discover', 'project_type'=> 'equity' , 'admin' => false), array('title' => __l('Equity'),'class' => 'pull-left fa-inverse text-capitalize', 'escape' => false)); ?>
+												</li>
+											<?php
+											}
+											?>
+											<?php 
+											if(isPluginEnabled('Lend')) {
+											?>
+												<li>
+													<?php echo $this->Html->link('<span class="show">' . __l(Configure::read('project.alt_name_for_lend_singular_caps')) . '</span>', array('controller' => 'projects', 'action' => 'discover', 'project_type'=> 'lend' , 'admin' => false), array('title' => __l('Lend'),'class' => 'pull-left fa-inverse text-capitalize', 'escape' => false)); ?>
+												</li>
+											<?php
+											}
+											?>
+										</ul>
+										<div class="col-xs-12">
+											<p class="text-white-gray text-12 fcopy-text text-right">&copy;<?php echo date('Y');?><?php echo $this->Html->link($this->Html->cText(Configure::read('site.name'), false), '/', array('title' => Configure::read('site.name'), 'class' => 'text-white-gray ', 'escape' => false)) .  '. ' . __l('All rights reserved') . '.';?></p>
 										</div>
+										
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-5 col-lg-5 col-lg-04 hide prnt">
+									<div class="row">
+										<h3 class="h4 text-capitalize click-clps resp-foo-head">
+                                        	<strong class="fa-inverse "><?php echo sprintf(__l('about %s'), Configure::read('site.name'));?></strong>
+											<i class="fa fa-plus pull-right hidden"></i>
+                                        </h3>
+										<?php echo $this->Layout->menu('footer2'); ?>
+									</div>
+								</div>
+								<div class="col-sm-3 col-md-3 col-lg-3 col-lg-04 hide prnt">
+									<div class="row">
+										<h3 class="h4 text-capitalize click-clps resp-foo-head">
+											<strong class="fa-inverse"><?php echo __l('help'); ?></strong> 
+											<i class="fa fa-plus pull-right hidden"></i>
+                                        </h3>
+										<?php echo $this->Layout->menu('footer3'); ?>
 									</div>
 								</div>
 							</div>

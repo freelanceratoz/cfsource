@@ -16,7 +16,7 @@
 
 @brand-primary:         #2d4486;
 @brand-success:         #8fbd20;
-@brand-info:            #00afef;
+@brand-info:            #0c3537;
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d2352c;
 
@@ -42,7 +42,7 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  "Roboto", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  "Open Sans", sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -65,10 +65,10 @@
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
 
 //** By default, this inherits from the `<body>`.
-@headings-font-family:    inherit;
+@headings-font-family:    "Open Sans", sans-serif;
 @headings-font-weight:    500;
 @headings-line-height:    1.6;
-@headings-color:          inherit;
+@headings-color:          #666;
 
 
 //== Iconography
@@ -370,10 +370,10 @@
 
 // Navbar links
 @navbar-default-link-color:                #000;
-@navbar-default-link-hover-color:          #d2352c;
+@navbar-default-link-hover-color:          #0c3537;
 @navbar-default-link-hover-bg:             transparent;
-@navbar-default-link-active-color:         #555;
-@navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
+@navbar-default-link-active-color:         #ffffff;
+@navbar-default-link-active-bg:            #0c3537;
 @navbar-default-link-disabled-color:       #ccc;
 @navbar-default-link-disabled-bg:          transparent;
 
@@ -391,7 +391,7 @@
 //=== Inverted navbar
 // Reset inverted navbar basics
 @navbar-inverse-color:                      lighten(@gray-light, 15%);
-@navbar-inverse-bg:                         #3a3c41;
+@navbar-inverse-bg:                         #333;
 @navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
 
 // Inverted navbar links
@@ -628,9 +628,9 @@
 @alert-success-text:          #3c763d;
 @alert-success-border:        #d6e9c6;
 
-@alert-info-bg:               #d9edf7;
-@alert-info-text:             #31708f;
-@alert-info-border:           #bce8f1;
+@alert-info-bg:               #ffffff;
+@alert-info-text:             #0c3537;
+@alert-info-border:          #0c3537;
 
 @alert-warning-bg:            #fcf8e3;
 @alert-warning-text:          #8a6d3b;
@@ -712,9 +712,9 @@
 @panel-inner-border:          #ddd;
 @panel-footer-bg:             #f5f5f5;
 
-@panel-default-text:          @gray-dark;
-@panel-default-border:        #ddd;
-@panel-default-heading-bg:    #f5f5f5;
+@panel-default-text:          #ffffff;
+@panel-default-border:        #0c3537;
+@panel-default-heading-bg:    #0c3537;
 
 @panel-primary-text:          #fff;
 @panel-primary-border:        @brand-primary;

@@ -21,10 +21,10 @@ $redirect_url = Router::url(array(
 		if (isPluginEnabled('ProjectFollowers')) {
 			if(isPluginEnabled('HighPerformance') && (Configure::read('HtmlCache.is_htmlcache_enabled') || Configure::read('cloudflare.is_cloudflare_enabled'))) {?>
 							<div class="alpuf-<?php echo $this->Html->cInt($project['Project']['id'], false);?>  hide">
-								<?php echo $this->Html->link('<span class="lead roboto-bold">'. __l('Following') . '</span>', array('controller' => 'project_followers', 'action' => 'delete', $follower['ProjectFollower']['id']),array('class'=>"btn btn-lg col-xs-12 label-default clr-gray no-float js-add-remove-followers js-no-pjax js-tooltip js-unfollow",'escape' => false, 'title'=>__l('Unfollow')));  ?>
+								<?php echo $this->Html->link('<span class="lead roboto-bold">'. __l('Following') . '</span>', array('controller' => 'project_followers', 'action' => 'delete', $follower['ProjectFollower']['id']),array('class'=>"btn btn-lg col-xs-12   no-float js-add-remove-followers js-no-pjax js-tooltip js-unfollow",'escape' => false, 'title'=>__l('Unfollow')));  ?>
 							</div>
 							<div class="alpuf-sm-<?php echo $this->Html->cInt($project['Project']['id'], false);?>  hide">
-								<a id="js-follow-id" class="btn btn-lg col-xs-12 label-default clr-gray no-float js-tooltip js-follow js-no-pjax {'project_id':'<?php echo $this->Html->cInt($project['Project']['id'], false);?>'}" data-target="#" data-toggle="dropdown" title="<?php echo __l('Follow');?>" href="#"><span class="lead roboto-bold"><?php echo __l('Follow');?></span></a>
+								<a id="js-follow-id" class="btn btn-lg col-xs-12 no-float js-tooltip js-follow js-no-pjax {'project_id':'<?php echo $this->Html->cInt($project['Project']['id'], false);?>'}" data-target="#" data-toggle="dropdown" title="<?php echo __l('Follow');?>" href="#"><span class="lead roboto-bold"><?php echo __l('Follow');?></span></a>
 								<div class="dropdown-menu <?php echo $arrow_class; ?> js-social-link-div clearfix">
 									<div class="text-center">
 									<?php echo $this->Html->image('ajax-follow-loader.gif', array('alt' => __l('[Image: Loader]') ,'width' => 16, 'height' => 11)); ?>
@@ -33,38 +33,38 @@ $redirect_url = Router::url(array(
 							</div>
 
 							<div class='alpf-<?php echo $this->Html->cInt($project['Project']['id'], false);?>  hide'>
-								<a class="btn btn-lg col-xs-12 label-default clr-gray no-float" href="<?php echo $redirect_url; ?>"><span class="lead roboto-bold"><?php echo __l('Follow');?></span></a>
+								<a class="btn btn-lg col-xs-12  no-float" href="<?php echo $redirect_url; ?>"><span class="lead roboto-bold"><?php echo __l('Follow');?></span></a>
 							</div>
 							<div class='blpuf-<?php echo $this->Html->cInt($project['Project']['id'], false);?>  hide'>
-									<?php echo $this->Html->link('<span class="lead roboto-bold">' .__l('Follow'). '</span>', array('controller' => 'users', 'action' => 'login', '?' => 'f=project/' . $project['Project']['slug'], 'admin' => false), array('class' => 'btn btn-lg col-xs-12 label-default clr-gray no-float', 'title' => __l('Follow'),'escape' => false));	?>
+									<?php echo $this->Html->link('<span class="lead roboto-bold">' .__l('Follow'). '</span>', array('controller' => 'users', 'action' => 'login', '?' => 'f=project/' . $project['Project']['slug'], 'admin' => false), array('class' => 'btn btn-lg col-xs-12   no-float', 'title' => __l('Follow'),'escape' => false));	?>
 							</div>
 			<?php } else {
 
 			if ($this->Auth->sessionValid()):
 				if (!empty($follower)):
-					echo $this->Html->link('<span class="lead roboto-bold">'. __l('Following') . '</span>', array('controller' => 'project_followers', 'action' => 'delete', $follower['ProjectFollower']['id']),array('class'=>"btn btn-lg col-xs-12 label-default clr-gray no-float js-add-remove-followers js-no-pjax js-tooltip js-unfollow",'escape' => false, 'title'=>__l('Unfollow')));
+					echo $this->Html->link('<span class="lead roboto-bold">'. __l('Following') . '</span>', array('controller' => 'project_followers', 'action' => 'delete', $follower['ProjectFollower']['id']),array('class'=>"btn btn-lg col-xs-12 no-float js-add-remove-followers js-no-pjax js-tooltip js-unfollow",'escape' => false, 'title'=>__l('Unfollow')));
 				else:
 					if (in_array($project['Donate']['donate_project_status_id'], array(ConstDonateProjectStatus::OpenForIdea, ConstDonateProjectStatus::OpenForDonating, ConstDonateProjectStatus::FundingClosed, ConstDonateProjectStatus::Pending))):
 				?>
 						<?php if (isPluginEnabled('SocialMarketing')): ?>
-							<a id="js-follow-id" class="btn btn-lg col-xs-12 label-default clr-gray no-float js-tooltip js-follow js-no-pjax {'project_id':'<?php echo $this->Html->cInt($project['Project']['id'], false);?>'}" data-target="#" data-toggle="dropdown" title="<?php echo __l('Follow');?>" href="#"><span class="lead roboto-bold"><?php echo __l('Follow');?></span></a>
+							<a id="js-follow-id" class="btn btn-lg col-xs-12  no-float js-tooltip js-follow js-no-pjax {'project_id':'<?php echo $this->Html->cInt($project['Project']['id'], false);?>'}" data-target="#" data-toggle="dropdown" title="<?php echo __l('Follow');?>" href="#"><span class="lead roboto-bold"><?php echo __l('Follow');?></span></a>
 							<div class="dropdown-menu <?php echo $arrow_class; ?> js-social-link-div clearfix">
 								<div class="text-center">
 								<?php echo $this->Html->image('ajax-follow-loader.gif', array('alt' => __l('[Image: Loader]') ,'width' => 16, 'height' => 11)); ?>
 								</div>
 							</div>
 						<?php else: ?>
-							<a class="btn btn-lg col-xs-12 label-default clr-gray no-float" href="<?php echo $redirect_url; ?>"><span class="lead roboto-bold"><?php echo __l('Follow');?></span></a>
+							<a class="btn btn-lg col-xs-12 no-float" href="<?php echo $redirect_url; ?>"><span class="lead roboto-bold"><?php echo __l('Follow');?></span></a>
 						<?php endif; ?>
 			  <?php
 					else:
 					?>
-					<span class="btn btn-lg col-xs-12 label-default clr-gray no-float js-tooltip" title="<?php echo __l('Follow');?>"><span class="lead roboto-bold"><?php echo __l('Follow');?></span></span>
+					<span class="btn btn-lg col-xs-12 no-float js-tooltip" title="<?php echo __l('Follow');?>"><span class="lead roboto-bold"><?php echo __l('Follow');?></span></span>
 			  <?php	endif;
 				endif;
 		else:
 			if (in_array($project['Donate']['donate_project_status_id'], array(ConstDonateProjectStatus::OpenForIdea, ConstDonateProjectStatus::OpenForDonating, ConstDonateProjectStatus::FundingClosed))):
-				echo $this->Html->link('<span class="lead roboto-bold">' .__l('Follow'). '</span>', array('controller' => 'users', 'action' => 'login', '?' => 'f=project/' . $project['Project']['slug'], 'admin' => false), array('class' => 'btn btn-lg col-xs-12 label-default clr-gray no-float', 'title' => __l('Follow'),'escape' => false));
+				echo $this->Html->link('<span class="lead roboto-bold">' .__l('Follow'). '</span>', array('controller' => 'users', 'action' => 'login', '?' => 'f=project/' . $project['Project']['slug'], 'admin' => false), array('class' => 'btn btn-lg col-xs-12 no-float', 'title' => __l('Follow'),'escape' => false));
 			endif;
 		endif;?>
 		<?php

@@ -3,8 +3,8 @@
 		<div class="nav-parent">
 			<div class="row-brand text-center">
 				<a href="index.html">
-					<i class="icon-angle fa-2x text-primary"></i><br>
-					<img src="images/logo.png" alt="">
+					
+					<img src="img/fedhar.png" alt="">
 				</a>
 			</div>
 			<div class="row-navbar">

@@ -4,7 +4,7 @@
 <?php } ?>
 <div class="clearfix space" id="js-donate-scroll" itemtype="http://schema.org/Product" itemscope>
   <div class="donate-status text-b" itemprop="Name">
-    <span class="ver-space"><?php echo $this->Html->image('donates.png', array('class'=>'right-mspace-xs','width' => 50, 'height' => 50)); ?></span><span class="no-mar h3 text-success"><?php echo Configure::read('project.alt_name_for_donate_singular_caps'); ?></span>
+    <span class="ver-space"><?php echo $this->Html->image('donate_new_sm.png', array('class'=>'right-mspace-xs','width' => 50, 'height' => 50)); ?></span><span class="no-mar h3 text-success"><?php echo Configure::read('project.alt_name_for_donate_singular_caps'); ?></span>
   </div>  
 </div>
   <div class="clearfix hor-space">

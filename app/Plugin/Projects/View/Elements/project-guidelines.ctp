@@ -11,7 +11,7 @@
 		<?php } else {?>
 		<li>
 		<?php } ?>
-			<?php echo $this->Html->link($this->Html->image('start-pledge.png') . '<strong>'. __l(Configure::read('project.alt_name_for_pledge_singular_small')) .'</strong>', array('controller' =>'projects', 'action' => 'add', 'project_type'=>'pledge'), array('class' => 'pledge-heading text-uppercase', 'escape' => false)); ?>
+			<?php echo $this->Html->link($this->Html->image('pledge_new_sm.png') . '<strong>'. __l(Configure::read('project.alt_name_for_pledge_singular_small')) .'</strong>', array('controller' =>'projects', 'action' => 'add', 'project_type'=>'pledge'), array('class' => 'pledge-heading text-uppercase', 'escape' => false)); ?>
 		</li>
 	<?php
 	}
@@ -24,7 +24,7 @@
 		<?php } else {?>
 		<li>
 		<?php } ?>
-			<?php echo $this->Html->link($this->Html->image('start-donate.png') . '<strong>'. __l(Configure::read('project.alt_name_for_donate_singular_small')) .'</strong>', array('controller' =>'projects', 'action' => 'add', 'project_type'=>'donate'), array('class' => 'donate-heading text-uppercase', 'escape' => false)); ?>
+			<?php echo $this->Html->link($this->Html->image('donate_new_sm.png') . '<strong>'. __l(Configure::read('project.alt_name_for_donate_singular_small')) .'</strong>', array('controller' =>'projects', 'action' => 'add', 'project_type'=>'donate'), array('class' => 'donate-heading text-uppercase', 'escape' => false)); ?>
 		</li>
 	<?php
 	}
@@ -37,7 +37,7 @@
 		<?php } else {?>
 		<li>
 		<?php } ?>
-			<?php echo $this->Html->link($this->Html->image('start-equity.png') . '<strong>'. __l(Configure::read('project.alt_name_for_equity_singular_small')) .'</strong>', array('controller' =>'projects', 'action' => 'add', 'project_type'=>'equity'), array('class' => 'equity-heading text-uppercase', 'escape' => false)); ?>
+			<?php echo $this->Html->link($this->Html->image('equity_new_sm.png') . '<strong>'. __l(Configure::read('project.alt_name_for_equity_singular_small')) .'</strong>', array('controller' =>'projects', 'action' => 'add', 'project_type'=>'equity'), array('class' => 'equity-heading text-uppercase', 'escape' => false)); ?>
 		</li>
 	<?php
 	}
@@ -50,7 +50,7 @@
 		<?php } else {?>
 		<li>
 		<?php } ?>
-			<?php echo $this->Html->link($this->Html->image('start-lend.png') . '<strong>'. __l(Configure::read('project.alt_name_for_lend_singular_small')) .'</strong>', array('controller' =>'projects', 'action' => 'add', 'project_type'=>'lend'), array('class' => 'lend-heading text-uppercase', 'escape' => false)); ?>
+			<?php echo $this->Html->link($this->Html->image('lend_new_sm.png') . '<strong>'. __l(Configure::read('project.alt_name_for_lend_singular_small')) .'</strong>', array('controller' =>'projects', 'action' => 'add', 'project_type'=>'lend'), array('class' => 'lend-heading text-uppercase', 'escape' => false)); ?>
 		</li>
 	<?php
 	}
@@ -149,7 +149,7 @@
 <?php 
 	if(!empty($project_type) && isPluginEnabled(Inflector::camelize($project_type))) {
 	?>
-	<section class="gray-bg">
+	<section class="">
 		<div class="container">
 			<?php
 				echo $this->element(Inflector::camelize($project_type).'.how_it_works');

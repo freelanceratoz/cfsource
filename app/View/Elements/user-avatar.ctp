@@ -76,7 +76,7 @@
 		</section>
   </div>
 </section>
-<ul class="col-xs-12 list-inline gray-bg users-dashboard-ul text-center">
+<ul class="col-xs-12 list-inline users-dashboard-ul text-center">
   <?php if (isPluginEnabled('Wallet')): ?>
 	<li>
 		<div><strong class="text-info"><?php echo $this->Html->siteCurrencyFormat($this->Html->cCurrency($logged_in_user['User']['available_wallet_amount'],false)); ?></strong></div>

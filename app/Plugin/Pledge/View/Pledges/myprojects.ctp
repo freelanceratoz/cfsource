@@ -3,7 +3,7 @@
   <div class="js-response pledge space hor-mspace">
 <?php } ?>
 <div class="clearfix space" id="js-pledge-scroll">
-	<div class="pledge-status text-info text-b" itemprop="Name"> <span class="ver-space"><?php echo $this->Html->image('pledge-hand.png', array('class'=>'right-mspace-xs','width' => 50, 'height' => 50)); ?></span><span class="no-mar h3"><?php echo Configure::read('project.alt_name_for_pledge_singular_caps'); ?></span> </div>	
+	<div class="pledge-status text-info text-b" itemprop="Name"> <span class="ver-space"><?php echo $this->Html->image('pledge_new_sm.png', array('class'=>'right-mspace-xs','width' => 50, 'height' => 50)); ?></span><span class="no-mar h3"><?php echo Configure::read('project.alt_name_for_pledge_singular_caps'); ?></span> </div>	
 </div>
   <div class="clearfix hor-space">
     <ul class="filter-list-block list-inline">

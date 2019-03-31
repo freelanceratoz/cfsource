@@ -36,10 +36,11 @@ $linkedin_settings_id = 91;
 <title>Crowdfunding - Diagnostic Tool</title>
 <style type="text/css">
 body{
-	color:#4c4c4c;
-	line-height:18px;
+	color:#666;
+	font-family:"Open Sans", sans-serif;
 	font-size:12px;
-	font-family:verdana;
+	line-height:18px;
+}
 }
 /** table-list */
 table.list,table.list td,table.list th {

@@ -13,7 +13,7 @@
  * Custom configurations
  */
 if (!defined('DEBUG')) {
-    define('DEBUG', 1);
+    define('DEBUG', 0);
     // permanent cache re1ated settings
     define('PERMANENT_CACHE_CHECK', (!empty($_SERVER['SERVER_ADDR']) && $_SERVER['SERVER_ADDR'] != '127.0.0.1') ? true : false);
     // site default language

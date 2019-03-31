@@ -42,7 +42,7 @@ if(empty($this->request->data['Project']['form_field_step'])) {
 				?>
 					<li class="<?php echo ($current_step == $step_key)?'active':''; ?>">
 						<span class="badge <?php echo ($current_step == $step_key)?'badge-module':''; ?>"><?php echo $step; ?></span>
-						<span class="show no-mar text-info text-16 top-space <?php echo ($current_step == $step_key)?'successc':''; ?>"><?php echo $this->Html->cText(__l($FormFieldStep['name']), false); ?></span>
+						<span class="show no-mar  text-16 top-space <?php echo ($current_step == $step_key)?'successc':''; ?>"><?php echo $this->Html->cText(__l($FormFieldStep['name']), false); ?></span>
 					</li>
 				<?php 
 				if($current_step == $step_key && $FormFieldStep['name'] == "Payment"){

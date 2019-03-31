@@ -138,7 +138,7 @@ if (!empty($proj_cnt) && ($proj_cnt == 1 || $proj_cnt == 2 || $proj_cnt == 3)) {
 				if (!empty($this->request->params['named']['limit']) && $this->request->params['named']['limit'] == 4) {
 					if (!empty($discover_heading)) {
 ?>
-						<h4 class="lead col-lg-12 hidden-xs 4">
+						<h4 class="lead col-lg-12 hidden-xs 4 text-center">
 							<strong><?php echo __l($discover_heading); ?></strong>
 						</h4>
 						<h4 class="h3 visible-xs text-center">
@@ -147,7 +147,7 @@ if (!empty($proj_cnt) && ($proj_cnt == 1 || $proj_cnt == 2 || $proj_cnt == 3)) {
 <?php
 					} else {
 ?>
-						<h4 class="lead col-lg-12 hidden-xs 4">
+						<h4 class="lead col-lg-12 hidden-xs 4 text-center">
 							<strong><?php echo __l($project_type_heading); ?></strong>
 						</h4>
 						<h4 class="h3 visible-xs text-center">
@@ -929,30 +929,30 @@ if (!empty($proj_cnt) && ($proj_cnt == 1 || $proj_cnt == 2 || $proj_cnt == 3)) {
         if (!empty($this->request->params['named']['limit']) && $total_projects < $this->request->params['named']['limit']) {
             if (!empty($proj_cnt) && $proj_cnt <= 1) {
 ?>
-				<div class="col-sm-6 start-project-block tabpanel-block-width">
+				<div class="col-sm-6 start-project-block tabpanel-block-width prdct-pge">
 <?php
             } else if (!empty($proj_cnt) && $proj_cnt == 2) {
 ?>
-				<div class="col-sm-6 col-md-4 start-project-block">
+				<div class="col-sm-6 col-md-4 start-project-block prdct-pge">
 <?php
             } else if (!empty($proj_cnt) && $proj_cnt >= 3) {
 ?>
-				<div class="col-xs-12 col-sm-6 col-md-3 start-project-block">
+				<div class="col-xs-12 col-sm-6 col-md-3 start-project-block prdct-pge">
 <?php
             }
 ?>
-				<div class="thumbnail clearfix">
+				<div class="clearfix yur-prjt browse-proj">
 					<div class="text-center alert-info well-lg">
 						<div class="well-sm h5"></div>
 						<div class="well-lg h3">
 							<a href="" title="Your-project">
-								<?php echo $this->Html->image('your-project.png', array('alt' => __l('[Image: Your-project]'),'class' => 'h3'));?>
+								<?php echo $this->Html->image('new_project.png', array('alt' => __l('[Image: Your-project]'),'class' => 'h3'));?>
 							</a>
 							<h4 class="h3 1"><?php echo sprintf(__l('Your %s Here'), Configure::read('project.alt_name_for_project_singular_caps')); ?></h4>
 <?php
 				$url  = $this->Html->onProjectAddFormLoad();
 				$link_text = sprintf(__l('Start %s'), Configure::read('project.alt_name_for_project_singular_caps'));
-				echo $this->Html->link($link_text, $url, array('title' => $link_text,'class' => 'js-tooltip btn btn-info btn-lg h3','escape' => false));
+				echo $this->Html->link($link_text, $url, array('title' => $link_text,'class' => 'js-tooltip btn btn-info btn-lg marg-top-20','escape' => false));
 ?>
 						</div>
 					</div>
@@ -1013,12 +1013,12 @@ if (!empty($proj_cnt) && ($proj_cnt == 1 || $proj_cnt == 2 || $proj_cnt == 3)) {
             } else {
 ?>
 				<div class="row">
-					<div class="col-sm-6 col-sm-offset-3">
-						<div class="thumbnail rhds clearfix yur-prjt">
+					<div class="col-sm-4 col-sm-offset-4 prdct-pge">
+						<div class="rhds clearfix yur-prjt">
 							<div class="text-center alert-info well-lg">
-								<div class="well-lg h3"></div>
+								
 								<div class="well-lg h3">
-									<a href="" title="Your-project"> <?php echo $this->Html->image('your-project.png', array( 'alt' => __l('[Image: Your-project]'), 'class' => 'h3'));?></a>
+									<a href="" title="Your-project"> <?php echo $this->Html->image('new_project.png', array( 'alt' => __l('[Image: Your-project]'), 'class' => 'h3'));?></a>
 									<h4 class="h3 2"><?php echo sprintf(__l('Your %s Here'), Configure::read('project.alt_name_for_project_singular_caps'));
 									?></h4>
 									<?php
@@ -1029,12 +1029,12 @@ if (!empty($proj_cnt) && ($proj_cnt == 1 || $proj_cnt == 2 || $proj_cnt == 3)) {
 										$link_text = sprintf(__l('Start %s'), Configure::read('project.alt_name_for_project_singular_caps'));
 										echo $this->Html->link($link_text, $url, array(
 											'title' => $link_text,
-											'class' => 'js-tooltip btn btn-info btn-lg h3',
+											'class' => 'js-tooltip btn btn-info btn-lg marg-top-20',
 											'escape' => false
 										));
 									?>
 								</div>
-								<div class="well-lg h3"></div>
+								
 							</div>
 						</div>
 					</div>

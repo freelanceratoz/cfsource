@@ -16,12 +16,13 @@
 <?php if( Configure::read('twitter.is_enabled_twitter_connect') OR Configure::read('facebook.is_enabled_facebook_connect') OR Configure::read('linkedin.is_enabled_linkedin_connect') OR Configure::read('yahoo.is_enabled_yahoo_connect') OR  Configure::read('google.is_enabled_google_connect') OR Configure::read('googleplus.is_enabled_googleplus_connect') OR Configure::read('openid.is_enabled_openid_connect') OR Configure::read('angellist.is_enabled_angellist_connect') ) {?>
     <?php } ?>
   <div class="login-form">	
-	  <ul class="list-inline clearfix login-title">
-		<li class="pull-left"><h2 class="navbar-btn"><?php echo __l('Register');?></h2></li>
-		<li class="pull-right"><i class="fa fa-pencil" aria-hidden="true"></i></li>
-	  </ul>
-	  <?php echo $this->Form->create('User', array('action' => 'register', 'class' => 'form-horizontal')); ?>
-	  <div class="clearfix">
+	  <h2 class="navbar-btn login-title"><?php echo __l('Register');?></h2>
+		
+	 
+		<?php echo $this->Form->create('User', array('action' => 'register', 'class' => 'form-horizontal')); ?>
+		<div class="row">
+		<div class="col-md-6 col-sm-12">
+	  <div class="user-access-blk">
 	  <?php
 	  if (!empty($this->request->data['User']['openid_url'])):
 		echo $this->Form->input('openid_url', array('type' => 'hidden', 'value' => $this->request->data['User']['openid_url']));
@@ -175,17 +176,20 @@
 	  <?php echo $this->Form->input('is_agree_terms_conditions', array('div' => false, 'label' => sprintf(__l('I have read, understood & agree to the %s'), $this->Html->link(__l('Terms & Conditions'), array('controller' => 'pages', 'action' => 'view', 'term-and-conditions'), array('title' => __l('Terms & Conditions'), 'class' => 'js-no-pjax', 'target' => '_blank', 'escape' => false))))); ?>
 	 </div>
 	  <?php } ?>
-	  <div class="submit-form"> 
+	  <div class="submit-form clearfix"> 
+	  <div class="marg-top-20 pull-left"><?php echo __l('Already have an account?');?> <?php echo $this->Html->link(__l('Login'), array('controller' => 'users', 'action' => 'login', 'admin'=>false), array('title' => __l('Login'),'class' => 'text-info marg-left-5'));?> </div>
 		<?php echo $this->Form->submit(__l('Register'),array('class' => 'btn form-control')); ?> 
-		<div class="marg-top-20 text-center"><?php echo __l('Already have an account?');?> <?php echo $this->Html->link(__l('Login'), array('controller' => 'users', 'action' => 'login', 'admin'=>false), array('title' => __l('Login'),'class' => 'text-info marg-left-5'));?> </div>
+		
 	  </div>
-	  </div>
+	  
 	  <?php echo $this->Form->end(); ?>
 </div>
+	</div>
+<div class="col-md-6 col-sm-12">
 <?php if(((Configure::read('twitter.is_enabled_twitter_connect') || Configure::read('facebook.is_enabled_facebook_connect') || Configure::read('linkedin.is_enabled_linkedin_connect') || Configure::read('yahoo.is_enabled_yahoo_connect') ||  Configure::read('google.is_enabled_google_connect') || Configure::read('googleplus.is_enabled_googleplus_connect') || Configure::read('openid.is_enabled_openid_connect') || Configure::read('angellist.is_enabled_angellist_connect')))) {
 ?>
-<div class="clearfix social-block">
-		<p class="text-center text-16"><?php echo __l('Or SignUp with'); ?></p>
+<div class="clearfix social-block user-access-social-blk  user-register-social">
+		
       <ul class="list-inline text-center">
       <?php if (Configure::read('facebook.is_enabled_facebook_connect')){ ?>
         <li>
@@ -236,7 +240,9 @@
 		<?php echo $this->Html->link('<i class="fa fa-angellist"></i>', '#', array('title' => __l('AngelList'), 'escape' => false,'class' => "btn btn-default angellist-btn js-connect js-no-pjax",'data-url' => $url)); ?>
         </li>
       <?php } ?>
-       </ul>
+			 </ul>
+		</div>
+		</div>
      </div>
 <?php } ?>	 
 </div>

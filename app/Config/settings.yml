@@ -50,7 +50,7 @@ googleplus.consumer_key: 1061226080208.apps.googleusercontent.com
 googleplus.consumer_secret: 5dUnvSsVNnLmodPW41Fjn3F5
 googleplus.is_enabled_googleplus_connect: 1
 Hook.bootstraps: >
-    Projects,ProjectFlags,ProjectFollowers,Translation,SecurityQuestions,LaunchModes,MobileApp,Donate,Equity,Lend,Pledge,Affiliates,SocialMarketing,Insights,Idea,Sudopay,Wallet
+    Projects,ProjectFlags,ProjectFollowers,Translation,SecurityQuestions,LaunchModes,MobileApp,Donate,Equity,Lend,Pledge,Affiliates,SocialMarketing,Insights,Idea,Wallet
 HtmlCache.is_htmlcache_enabled: 0
 insights.is_enable_public_stats: 1
 invite.facebook: 'Check out this website ##SITE_NAME## ##REFERRAL_URL##'
@@ -287,6 +287,8 @@ thumb_size.very_big_thumb.height: 350
 thumb_size.very_big_thumb.width: 590
 thumb_size.very_small_big_thumb.height: 112
 thumb_size.very_small_big_thumb.width: 150
+thumb_size.project_big_thumb.height: 240
+thumb_size.project_big_thumb.width: 390
 twitter.consumer_key: nEeOkK891kEHsKECR7eStg
 twitter.consumer_secret: u8td2G1ofZZlrrjAyKqMQnwqUaxupN0xtNCuP1Nc
 twitter.is_enabled_twitter_connect: 1

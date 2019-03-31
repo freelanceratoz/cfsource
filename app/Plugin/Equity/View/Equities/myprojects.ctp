@@ -3,7 +3,7 @@
   <div class="js-response equity space hor-mspace">
 <?php } ?>
 <div class="clearfix space" id="js-equity-scroll" itemtype="http://schema.org/Product" itemscope>
-  <div class="equity-status text-b" itemprop="Name"> <span class="ver-space"><?php echo $this->Html->image('equity-hand.png', array('width' => 50, 'height' => 50)); ?></span><span class="no-mar h3"><?php echo Configure::read('project.alt_name_for_equity_singular_caps'); ?></span></div>
+  <div class="equity-status text-b" itemprop="Name"> <span class="ver-space"><?php echo $this->Html->image('equity_new_sm.png', array('width' => 50, 'height' => 50)); ?></span><span class="no-mar h3"><?php echo Configure::read('project.alt_name_for_equity_singular_caps'); ?></span></div>
 </div>
 
   <div class="clearfix hor-space">

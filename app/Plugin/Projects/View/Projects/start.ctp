@@ -21,7 +21,7 @@
 	}
 ?>  
 <section class="clearfix container text-center <?php echo $this->Html->getUniquePageId();?>" id="main">
-  <h2 class="text-center project-status-7 start-title text-info text-b"><span><?php echo __l('Start Project'); ?></span></h2>
+  <h2 class="text-center project-status-7 start-title sitegreenc text-b"><span><?php echo __l('Start Project'); ?></span></h2>
   <section class="row">
   <div class="well-sm">
    <div class="bot-space"><p class="text-center start-view"><?php echo __l('Have idea? No money? Need someone to help? Start a project and use crowd power to raise funds.'); ?> </p></div>

@@ -3,7 +3,7 @@
   <div class="js-response lend space hor-mspace">
 <?php } ?>
 <div class="clearfix space" id="js-lend-scroll" itemtype="http://schema.org/Product" itemscope>
-  <div class=" lend-status text-b" itemprop="Name"> <span class="ver-space"><?php echo $this->Html->image('lend-hand.png', array('width' => 50, 'height' => 50)); ?></span><span class="no-mar h3"><?php echo Configure::read('project.alt_name_for_lend_singular_caps'); ?></span> </div>  
+  <div class=" lend-status text-b" itemprop="Name"> <span class="ver-space"><?php echo $this->Html->image('lend_new_sm.png', array('width' => 50, 'height' => 50)); ?></span><span class="no-mar h3"><?php echo Configure::read('project.alt_name_for_lend_singular_caps'); ?></span> </div>  
 </div>
   <div class="clearfix hor-space">
     <ul class="filter-list-block list-inline">

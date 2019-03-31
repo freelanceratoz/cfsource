@@ -22,7 +22,7 @@ if (isset($this->request->params['named']['is_home'])):
 	endif;
 endif;
 ?>
-<div class="gray-bg">
+<div class="">
 	<div class="container">
 		<div id="node-<?php echo $this->Layout->node('id'); ?>" class="terms-policy-sec text-left <?php echo $hide_class; ?> node node-type-<?php echo $this->Layout->node('type').' '.$bgcolorClass; ?>">
 				<?php $node_arr = array('home-banner')?>

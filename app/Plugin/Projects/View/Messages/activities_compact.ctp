@@ -1,10 +1,10 @@
-<div class="panel panel-default navbar-btn no-border bg-clor-lit-gray">
-	<div class="panel-heading bg-clor-darkgray text-center bdr-rad-7px">
+<div class="panel panel-default navbar-btn no-border">
+	<div class="panel-heading  text-center">
 		<p class="lead list-group-item-text list-group-item-heading roboto-bold">
 			<?php echo __l('Recent activity ');?><i class="fa fa-rss"></i>
 		</p>
 	</div>
-	<div class="panel-body bg-clor-lit-gray roboto-light">
+	<div class="panel-body ">
 		<?php
 		if (!empty($messages)) {
 			foreach ($messages as $message):

@@ -146,7 +146,7 @@
 			</span>
 		</p>
 	</div>
-	<hr class="hr-2px-drk-gray marg-top-30 marg-btom-5">
+	
 </li>
 <?php /*if (isPluginEnabled('ProjectFollowers')): ?>
 <section class="clearfix">
