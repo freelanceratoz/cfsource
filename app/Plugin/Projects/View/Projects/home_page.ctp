@@ -40,7 +40,7 @@
 				 data-offset-y="190"
 				 data-origin="tl"
 				 data-position="normal"
-				 data-masked="true">Modern architecture</div>
+				 data-masked="true"><?php echo $this->Html->cText(Configure::read('site.name'), false); ?></div>
 			<div class="ms-layer msp-cn-119-22"
 				 style=""
 				 data-effect="t(true,n,60,-60,n,n,n,n,n,n,n,n,n,n,n)"
@@ -51,7 +51,7 @@
 				 data-offset-y="261"
 				 data-origin="tl"
 				 data-position="normal" >Traveling day in and day out.</div>
-			<a href="#"
+			<a href="/projects/start"
 			   target="_self"
 			   class="ms-layer msp-cn-119-7 btn btn-outline-dark msp-preset-btn-172"
 			   data-effect="t(true,n,70,-70,n,n,n,n,n,n,n,n,n,n,n)"
@@ -90,7 +90,7 @@
 				 data-origin="tl"
 				 data-position="normal"
 				 data-mask-width="600"
-				 data-mask-height="59">The most beautiful</div>
+				 data-mask-height="59"><?php echo $this->Html->cText(Configure::read('site.name'), false); ?></div>
 			<div class="ms-layer ms-title msp-cn-119-9 text-white"
 				 style=""
 				 data-effect="t(true,150,n,n,n,n,n,n,n,n,n,n,n,n,n)"
@@ -102,7 +102,7 @@
 				 data-origin="tl"
 				 data-position="normal"
 				 data-masked="true">Buildings in town</div>
-			<a href="#"
+			<a href="/projects/start"
 			   target="_self"
 			   class="ms-layer msp-cn-119-11 btn btn-white-outline msp-preset-btn-173"
 			   data-effect="t(true,n,n,n,n,n,n,n,2,2,n,n,n,n,n)"
@@ -151,8 +151,8 @@
 				 data-offset-y="268"
 				 data-origin="tl"
 				 data-position="normal"
-				 data-masked="true">Spectacular Modeling</div>
-			<a href="#"
+				 data-masked="true"><?php echo $this->Html->cText(Configure::read('site.name'), false); ?></div>
+			<a href="/projects/start"
 			   target="_self"
 			   class="ms-layer  btn btn-white-outline msp-preset-btn-173"
 			   data-effect="t(true,n,n,20,n,n,n,n,0.6,0.6,n,n,n,n,n)"
@@ -193,171 +193,18 @@
 <div class=" pt100">
 	<div class="container">
 		<h2 class="section-title mb70">Latest work</h2>
-		<!--                            <div class="clearfix">
+                     <div class="clearfix">
 										<div id="js-filters-lightbox-gallery" class="cbp-l-filters-button cbp-l-filters-left">
 											<div data-filter="*" class="cbp-filter-item-active cbp-filter-item">All</div>
 											<div data-filter=".graphic" class="cbp-filter-item">Graphic</div>
 											<div data-filter=".logos" class="cbp-filter-item">Logo</div>
 											<div data-filter=".motion" class="cbp-filter-item">Motion</div>
 										</div>
-									</div>-->
+									</div>
 
 	</div>
-	<div id="js-grid-lightbox-gallery" class="cbp">
-		<div class="cbp-item web-design graphic print motion">
-			<a href="img/asset/images/w1.jpg" class="cbp-caption cbp-lightbox" data-title="World Clock<br>by Paul Flavius Nechita" rel="nofollow">
-				<div class="cbp-caption-defaultWrap">
-					<img src="img/asset/images/w1.jpg" alt="">
-				</div>
-				<div class="cbp-caption-activeWrap">
-					<div class="cbp-l-caption-alignLeft">
-						<div class="cbp-l-caption-body">
-							<div class="cbp-l-caption-title">World Clock</div>
-							<div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
-						</div>
-					</div>
-				</div>
-			</a>
-		</div>
-		<div class="cbp-item web-design logos identity graphic">
-			<a href="img/asset/images/w2.jpg" class="cbp-caption cbp-lightbox" data-title="Bolt UI<br>by Tiberiu Neamu" rel="nofollow">
-				<div class="cbp-caption-defaultWrap">
-					<img src="img/asset/images/w2.jpg" alt="">
-				</div>
-				<div class="cbp-caption-activeWrap">
-					<div class="cbp-l-caption-alignLeft">
-						<div class="cbp-l-caption-body">
-							<div class="cbp-l-caption-title">Bolt UI</div>
-							<div class="cbp-l-caption-desc">by Tiberiu Neamu</div>
-						</div>
-					</div>
-				</div>
-			</a>
-		</div>
-		<div class="cbp-item graphic print identity">
-			<a href="img/asset/images/w3.jpg" class="cbp-caption cbp-lightbox" data-title="WhereTO App<br>by Tiberiu Neamu" rel="nofollow">
-				<div class="cbp-caption-defaultWrap">
-					<img src="img/asset/images/w3.jpg" alt="">
-				</div>
-				<div class="cbp-caption-activeWrap">
-					<div class="cbp-l-caption-alignLeft">
-						<div class="cbp-l-caption-body">
-							<div class="cbp-l-caption-title">WhereTO App</div>
-							<div class="cbp-l-caption-desc">by Tiberiu Neamu</div>
-						</div>
-					</div>
-				</div>
-			</a>
-		</div>
-		<div class="cbp-item web-design motion logos">
-			<a href="img/asset/images/w4.jpg" class="cbp-caption cbp-lightbox" data-title="iDevices<br>by Tiberiu Neamu" rel="nofollow">
-				<div class="cbp-caption-defaultWrap">
-					<img src="img/asset/images/w4.jpg" alt="">
-				</div>
-				<div class="cbp-caption-activeWrap">
-					<div class="cbp-l-caption-alignLeft">
-						<div class="cbp-l-caption-body">
-							<div class="cbp-l-caption-title">iDevices</div>
-							<div class="cbp-l-caption-desc">by Tiberiu Neamu</div>
-						</div>
-					</div>
-				</div>
-			</a>
-		</div>
-		<div class="cbp-item identity graphic print">
-			<a href="img/asset/images/w5.jpg" class="cbp-caption cbp-lightbox" data-title="Seemple* Music<br>by Tiberiu Neamu" rel="nofollow">
-				<div class="cbp-caption-defaultWrap">
-					<img src="img/asset/images/w5.jpg" alt="">
-				</div>
-				<div class="cbp-caption-activeWrap">
-					<div class="cbp-l-caption-alignLeft">
-						<div class="cbp-l-caption-body">
-							<div class="cbp-l-caption-title">Seemple* Music</div>
-							<div class="cbp-l-caption-desc">by Tiberiu Neamu</div>
-						</div>
-					</div>
-				</div>
-			</a>
-		</div>
-		<div class="cbp-item motion print logos web-design">
-			<a href="img/asset/images/w6.jpg" class="cbp-caption cbp-lightbox" data-title="Remind~Me Widget<br>by Tiberiu Neamu" rel="nofollow">
-				<div class="cbp-caption-defaultWrap">
-					<img src="img/asset/images/w6.jpg" alt="">
-				</div>
-				<div class="cbp-caption-activeWrap">
-					<div class="cbp-l-caption-alignLeft">
-						<div class="cbp-l-caption-body">
-							<div class="cbp-l-caption-title">Remind~Me Widget</div>
-							<div class="cbp-l-caption-desc">by Tiberiu Neamu</div>
-						</div>
-					</div>
-				</div>
-			</a>
-		</div>
-		<div class="cbp-item graphic logos">
-			<a href="img/asset/images/w7.jpg" class="cbp-caption cbp-lightbox" data-title="Workout Buddy<br>by Tiberiu Neamu" rel="nofollow">
-				<div class="cbp-caption-defaultWrap">
-					<img src="img/asset/images/w7.jpg" alt="">
-				</div>
-				<div class="cbp-caption-activeWrap">
-					<div class="cbp-l-caption-alignLeft">
-						<div class="cbp-l-caption-body">
-							<div class="cbp-l-caption-title">Workout Buddy</div>
-							<div class="cbp-l-caption-desc">by Tiberiu Neamu</div>
-						</div>
-					</div>
-				</div>
-			</a>
-		</div>
-		<div class="cbp-item identity print logos motion">
-			<a href="img/asset/images/w8.jpg" class="cbp-caption cbp-lightbox" data-title="Digital Menu<br>by Cosmin Capitanu" rel="nofollow">
-				<div class="cbp-caption-defaultWrap">
-					<img src="img/asset/images/w8.jpg" alt="">
-				</div>
-				<div class="cbp-caption-activeWrap">
-					<div class="cbp-l-caption-alignLeft">
-						<div class="cbp-l-caption-body">
-							<div class="cbp-l-caption-title">Digital Menu</div>
-							<div class="cbp-l-caption-desc">by Cosmin Capitanu</div>
-						</div>
-					</div>
-				</div>
-			</a>
-		</div>
-	</div>
+	
 </div><!--bg-faded-->
-<div class="container pt100 pb50">
-	<h2 class="mb70 section-title">What they say?</h2>
-	<div class="row">
-		<div class="col-md-4 mb50">
-			<div class="testimonial-card testimonial testimonial-col">
-				<p>
-					" This is a great theme! I love it and recommend it to anyone wanting to purchase it. "
-				</p>
-				<img src="img/asset/images/team3.jpg" alt="" class="img-fluid  rounded-circle">
-				<h5>John Doe <span>Assan Customer</span></h5>
-			</div>
-		</div>
-		<div class="col-md-4 mb50">
-			<div class="testimonial-card testimonial testimonial-col">
-				<p>
-					" This is a great theme! I love it and recommend it to anyone wanting to purchase it. "
-				</p>
-				<img src="img/asset/images/team2.jpg" alt="" class="img-fluid rounded-circle">
-				<h5>John Doe <span>Assan Customer</span></h5>
-			</div>
-		</div>
-		<div class="col-md-4 mb50">
-			<div class="testimonial-card testimonial testimonial-col">
-				<p>
-					" This is a great theme! I love it and recommend it to anyone wanting to purchase it. "
-				</p>
-				<img src="img/asset/images/team1.jpg" alt="" class="img-fluid  rounded-circle">
-				<h5>John Doe <span>Assan Customer</span></h5>
-			</div>
-		</div>
-	</div>
-</div><!--container-->
 <div class="bg-parallax parallax-overlay" data-jarallax='{"speed": 0.2}' style='background-image: url("img/asset/images/bg1.jpg")'>
 	<div class="container pt100 pb50">
 		<div class="row">
@@ -367,7 +214,7 @@
 					768
 				</h3>
 				<p class="text-white">
-					Projects
+					Pledge Projects
 				</p>
 			</div><!--col-->
 			<div class="col-lg-3 col-md-6 pb50 text-center">
@@ -376,7 +223,7 @@
 					435
 				</h3>
 				<p class="text-white">
-					Happy Clients
+					Donate Projects
 				</p>
 			</div><!--col-->
 			<div class="col-lg-3 col-md-6 pb50 text-center">
@@ -385,7 +232,7 @@
 					9483
 				</h3>
 				<p class="text-white">
-					Hours of work
+					Lend Projects
 				</p>
 			</div><!--col-->
 			<div class="col-lg-3 col-md-6 pb50 text-center">
@@ -394,24 +241,9 @@
 					400
 				</h3>
 				<p class="text-white">
-					Employees
+					Equity Projects
 				</p>
 			</div><!--col-->
 		</div>
 	</div>
 </div><!--counter up -->
-<div class="bg-white">
-	<div class="container pt100 pb70">
-		<h2 class="section-title mb70">Our Clients</h2>
-		<ul class="clients-grid mb0 column4 clearfix">
-			<li><img src="img/asset/images/cl-1.png" class="img-fluid" alt="Clients"></li>
-			<li><img src="img/asset/images/cl-2.png" class="img-fluid" alt="Clients"></li>
-			<li><img src="img/asset/images/cl-3.png" class="img-fluid" alt="Clients"></li>
-			<li><img src="img/asset/images/cl-4.png" class="img-fluid" alt="Clients"></li>
-			<li><img src="img/asset/images/cl-5.png" class="img-fluid" alt="Clients"></li>
-			<li><img src="img/asset/images/cl-1.png" class="img-fluid" alt="Clients"></li>
-			<li><img src="img/asset/images/cl-3.png" class="img-fluid" alt="Clients"></li>
-			<li><img src="img/asset/images/cl-5.png" class="img-fluid" alt="Clients"></li>
-		</ul>
-	</div>
-</div>

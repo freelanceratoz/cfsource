@@ -18,7 +18,7 @@
 				$class ='input-group';
 			  endif;
 			?>
-			<div class="main-section new-admin-form admin-form gray-bg">
+			<div class="main-section new-admin-form admin-form">
 			  <?php
 				if(isset($this->request->data['UserAddWalletAmount']['wallet']) && $this->request->data['UserAddWalletAmount']['payment_gateway_id'] == ConstPaymentGateways::SudoPay && !empty($sudopay_gateway_settings) && $sudopay_gateway_settings['is_payment_via_api'] == ConstBrandType::VisibleBranding) {
 					echo $this->element('sudopay_button', array('data' => $sudopay_data, 'cache' => array('config' => 'sec')), array('plugin' => 'Sudopay'));

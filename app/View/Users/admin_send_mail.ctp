@@ -1,4 +1,4 @@
-<div class="clearfix admin-form gray-bg">
+<div class="clearfix admin-form">
   <?php
     echo $this->Form->create('User', array('action' => 'send_mail', 'class' => 'form-horizontal clearfix'));?>
     <fieldset>

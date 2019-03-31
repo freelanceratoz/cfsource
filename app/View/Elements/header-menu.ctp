@@ -145,7 +145,7 @@ if ($this->request->params['action'] != 'show_header') { ?>
 			<?php else : ?>
 			<ul class="list-inline h4 list-group-item-heading clearfix text-center row last-block-none hide" id="js-before-login-head-menu">
 				<li class="h4">
-				  <?php echo $this->Html->link(__l('Register'), array('controller' => 'users', 'action' => 'register', 'type' => 'social', 'admin' => false), array('title' => __l('Register'), 'class' => 'btn btn-success text-uppercase btn-sm js-no-pjax'));?>
+				  <?php echo $this->Html->link(__l('Register'), array('controller' => 'users', 'action' => 'register', 'type' => 'social', 'admin' => false), array('title' => __l('Register'), 'class' => 'btn btn-default text-uppercase btn-grey btn-sm js-no-pjax'));?>
 				</li>
 				<li class="h4">
 				  <?php echo $this->Html->link(__l('Login'), array('controller' => 'users', 'action' => 'login', 'admin' => false), array('title' => __l('Login'), 'class' => 'btn btn-default text-uppercase btn-grey btn-sm js-no-pjax'));?>

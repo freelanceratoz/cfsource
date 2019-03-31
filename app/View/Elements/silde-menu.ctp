@@ -9,10 +9,16 @@
 			</div>
 			<div class="row-navbar">
 				<ul class="list-unstyled verticle-nav">
-					<li><a class="active" href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a class="active" href="/">Home</a></li>
+					<li><a href="how-it-works">About</a></li>
+					<li><a href="contactus">Contact</a></li>
+					<?php if (!$this->Auth->sessionValid()) {?>
+						<li><?php echo $this->Html->link(__l('Login'), array('controller' => 'users', 'action' => 'login', 'admin' => false), array('title' => __l('Login')));?></li>
+						<li><?php echo $this->Html->link(__l('Register'), array('controller' => 'users', 'action' => 'register', 'type' => 'social', 'admin' => false), array('title' => __l('Register')));?></li>
+					<?php } else {?>
+						<li><?php echo $this->Html->link(__l('My Account'), array('controller' => 'user_profiles', 'action' => 'edit', $this->Auth->user('id')), array('class' => 'js-no-pjax', 'title' => __l('My Account')));?></li>
+						<li><?php echo $this->Html->link(__l('Logout'), array('controller' => 'users', 'action' => 'logout'), array('class' => 'js-no-pjax', 'title' => __l('Logout')));?></li>
+					<?php }?>
 				</ul>
 			</div>
 			<div class="row-social text-center">

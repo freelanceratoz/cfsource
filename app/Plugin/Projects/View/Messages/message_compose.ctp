@@ -2,7 +2,7 @@
   <?php if (empty($ajax_view)) { ?>
     <h3 class="title"><?php echo __l('Compose') ;?></h3>
   <?php } ?>
-  <div class="js-colorbox-response main-section admin-form gray-bg">
+  <div class="js-colorbox-response main-section admin-form">
     <?php
       $redirect = Router::url(array('controller' => 'users', 'action' => 'view', $this->request->data['Message']['to']), true);
       echo $this->Form->create('Message', array('class' => ' form-horizontal  {"redirect_url":"'.$redirect.'"}', 'enctype' => 'multipart/form-data', 'url' => array('controller' => 'messages', 'action' => 'compose', 'type' => 'contact', 'to' => $this->request->params['named']['to'], 'admin' => false)));

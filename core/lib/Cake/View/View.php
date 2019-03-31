@@ -552,7 +552,7 @@ class View extends Object {
 			}
 			if (empty($_SESSION['Auth']['User']['id']) && empty($this->request->url) && $this->request->params['controller'] != 'install' && env('HTTP_X_PJAX') != 'true' && empty($this->touch) && Configure::read('site.launch_mode') == 'Launch') {
 				$this->output = str_replace('js-header', 'js-header hide', $this->output);
-				cache('index.html', $this->output, '', 'webroot');
+				//cache('index.html', $this->output, '', 'webroot');
 			}
 		}
 	}

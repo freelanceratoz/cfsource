@@ -8,7 +8,7 @@
       <h3 class="h2"><?php echo __l('Contact Us'); ?></h3>
     </div>
   <div class="padd-top-30 padd-bottom-30">	
-  <div class="admin-form gray-bg">
+  <div class="admin-form">
     <?php
       echo $this->Form->create('Contact', array('class' => 'form-horizontal'));
       echo $this->Form->input('first_name', array('label' => __l('First Name')));

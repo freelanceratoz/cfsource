@@ -3,7 +3,7 @@
     <button type="button" class="close js-no-pjax" data-dismiss="modal" aria-hidden="true">&times;</button>
     <h2 id="js-modal-heading"><?php echo __l('Add New Field'); ?></h2>
   </div>
-  <div class="clearfix main-section admin-form gray-bg">		
+  <div class="clearfix main-section admin-form">		
 		<?php
 		  $url = Router::url(array('controller'=>'project_types','action'=>'edit', $this->request->data['FormField']['project_type_id']),true);
 		  echo $this->Html->scriptBlock('base = "' . $this->base. '";');

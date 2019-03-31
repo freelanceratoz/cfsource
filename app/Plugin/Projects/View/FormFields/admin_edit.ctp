@@ -1,4 +1,4 @@
-<div class="js-response admin-form gray-bg">
+<div class="js-response admin-form">
   <?php
     echo $this->Html->scriptBlock('base = "' . $this->base. '";');
     echo $this->Form->create('FormField');
